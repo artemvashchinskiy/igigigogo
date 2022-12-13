@@ -1,0 +1,14 @@
+    .mcafee__button {
+        display: flex;
+        justify-content: left;
+        &_mcafee {
+            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            opacity: .3;
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10%;
+            width: 200px;
+            height: 50px;
+            margin: 25px;
+        }
+    }

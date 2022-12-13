@@ -1,0 +1,27 @@
+.promotion {
+    display: flex;
+    list-style-type: none;
+    /* You can also add some margins here to make it look prettier */
+    &__discount {
+      font: bold 10px sans-serif;
+      font-size: 14px;
+      color: $menuPromotionColor;
+      border-radius: 3px;
+      background-color: #fc363b;
+      padding: 3px 6px 1px;
+      vertical-align: middle;
+    }
+    &__subscription {
+      font: bold 10px sans-serif;
+      font-size: 14px;
+      color: rgb(255, 78, 34);
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+    &__description {
+      font: bold 10px sans-serif;
+      font-size: 14px;
+      color: $menuPromotionColor;
+      margin-left: 20px;
+    }
+  }

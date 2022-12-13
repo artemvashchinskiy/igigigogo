@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>My page title</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div>
+        <div class="header">
+            <div>
+                <a href="default.asp"><img class="header__logo" src="img/logo.png" alt="igigigogo"></a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu__item"> 
+                    <a href="#">Streams</a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="#">Films</a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="#">Cartoons</a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="#">TV Serials</a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="#">TV Show</a>
+                </li>
+                <li class="header__menu__item">
+                    <div class="header__menu__item__dropdown">
+                        <button class="header__menu__item_dropbtn">Sports</button>
+                        <div class="header__menu__item__dropdown_content">
+                            <a href="#">Football</a>
+                            <a href="#">Martial Arts</a>
+                            <a href="#">Tenis</a>
+                            <a href="#">More sports</a>
+                        </div>
+                    </div>                 
+                </li>
+                <li class="header__menu__item">
+                    <a href="#">Blogs</a>
+                </li>
+                <li class="header__menu__item">
+                    <div class="header__menu__item__dropdown">
+                        <button class="header__menu__item_dropbtn">...</button>
+                        <div class="header__menu__item__dropdown_content">
+                            <a href="#">School online</a>
+                            <a href="#">Enter promo code</a>
+                            <a href="#">gifts</a>
+                            <a href="#">Audiobooks and podcasts</a>
+                            <a href="#">Tether the TV</a>
+                            <a href="#">All about prepayments</a>
+                            <a href="#">Bonusy</a>
+                            <a href="#">Cashback</a>
+                            <a href="#">Gratitude</a>
+                            <a href="#">Prepayment for mortgages</a>
+                            <a href="#">Prefix GOGOME</a>
+                            <a href="#">MEGOGO on outbuildings</a>
+                            <a href="#">Cinema for prepayment</a>
+                            <a href="#">Discovery+</a>
+                            <a href="#">Marvel like wonderful</a>
+                            <a href="#">POKER MEGOGO</a>
+                        </div>
+                    </div>      
+                </li>
+            </ul>
+            <div class="tariffs-button">
+                <a  class="tariffs" href="#">Tapифи</a>
+            </div>
+            <div class="dropdown-search">
+            <button onclick="myFunction()" class="dropbtn-search" type="submit"><i class="fa fa-search"></i></button>
+                <div id="myDropdown-search" class="dropdown-content-search">
+                  <input type="text" placeholder="Search.." id="myInput-search" onkeyup="filterFunction()">
+                </div>
+            </div>
+            <script>
+                /* When the user clicks on the button,
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown-search").classList.toggle("show-search");
+                }
+                
+                function filterFunction() {
+                  var input, filter, ul, li, a, i;
+                  input = document.getElementById("myInput-search");
+                  filter = input.value.toUpperCase();
+                  div = document.getElementById("myDropdown-search");
+                  a = div.getElementsByTagName("a");
+                  for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      a[i].style.display = "";
+                    } else {
+                      a[i].style.display = "none";
+                    }
+                  }
+                }
+            </script>
+            <div class="dropdown">
+                <button class="dropbtn">UA</button>
+                <div class="dropdown-content">
+                    <a href="#">汉语/漢語</a>
+                    <a href="#">हिन्दी, हिंदी</a>
+                    <a href="#">عَرَبِيّ</a>
+                </div>
+            </div>
+            <a class="login" href="#">УВІЙТИ</a>            
+        </div>
+        <div class="bckg-pic">
+            <div class="sound-button">
+                <img class="sound-pic" src="img/sound.png" alt="sound">
+                <!--<audio controls autoplay>
+                    <source src="audio/Nickelback-Song-On-Fire.mp3" type="audio/ogg">
+                    <source src="audio/Nickelback-Song-On-Fire.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>-->
+            </div>
+            <div class="mcafee__button">
+                <img class="mcafee__button_mcafee" src="img/McAfee.png" alt="mcafee">
+            </div>
+            <div class="bottom-box">
+                <div class="film-pic">
+                    <img class="igigogogo" style="width:200px;height:auto;" src="img/igigogogo.jpg" alt="igigogogo">
+                </div>
+                <div>
+                    <ul class="promotion">
+                        <li class="promotion__discount">АКЦІЯ</li>
+                        <li class="promotion__subscription">МАКСИМАЛЬНА</li>
+                        <li class="promotion__description">SNIPER. THE WHITE RA...</li>
+                        <li class="promotion__description">IMDB 6.2, MGG 5.1</li>
+                        <li class="promotion__description" >61+</li>
+                    </ul>
+                    <h1 class="movie-title">Lipsum generator: (Lorem Ipsum - All the facts)</h1>
+                    <audio style="margin-left: 40px;" controls autoplay>
+                        <source src="audio/Nickelback-Song-On-Fire.mp3" type="audio/ogg">
+                        <source src="audio/Nickelback-Song-On-Fire.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                    <ul class="beneath-menu">
+                        <li>
+                            <button class="button-play"><i class="fa fa-play play"></i>Watch!!!</button>
+                        <p class="explanation">Спробувати за 29 грн</p></li>
+               
+                        <li class="move-aside">
+                            <button class="button-favorite">✠</button> 
+                        <p class="explanation">До обраного</p></li>
+                    
+                    
+                        <li class="move-aside votebutton">👎
+                        <p class="explanation">14тис.</p></li>
+
+                        <li class="move-aside votebutton">😲
+                            <p class="explanation">😖 - 150тис.</p></li>
+                    
+                    
+                        <li class="move-aside votebutton">
+                            <script>
+                                function clickCounter() {
+                                  if (typeof(Storage) !== "undefined") {
+                                    if (localStorage.clickcount) {
+                                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                                    } else {
+                                      localStorage.clickcount = 1;
+                                    }
+                                    document.getElementById("result").innerHTML = "You have hated this button " + localStorage.clickcount + " time(s)  (click me!).";
+                                  } else {
+                                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                                  }
+                                }
+                                </script>
+                            <button class="votebutton" onclick="clickCounter()" type="button">😣</button>
+                            <div class="explanation topless" id="result"></div></li>
+
+                            <li class="move-aside votebutton">
+                                <script>
+                                    var c = 0;
+                                    function myCounter() {
+                                      document.getElementById("demo").innerHTML = ++c + " Oh No!";
+                                    }
+                                    </script> 
+                                <button class="votebutton" onClick="myTimer = setInterval(myCounter, 10)">🤬</button>
+                                <p class="explanation topless">Just click to stop!!!: <output id="demo"></output></p>
+                            </li>
+                    </ul>                    
+                </div>                
+            </div>
+        </div>
+    </div>
+        
+    
